@@ -1,0 +1,14 @@
+yarn init
+yarn add @babel/cli
+yarn add @babel/preset-env
+yarn add @babel/core
+yarn add @babel/plugin-proposal-object-rest-spread
+yarn add webpack webpack-cli --dev
+yarn add babel-loader -D
+yarn add webpack-dev-server -D
+yarn add axios
+
+//Com as configurações do webpack acredito que não precise utilizar os comandos do babel, caso coloque nas config do webpack.config.js, caso queira usar webpack
+// Quando utiliza webpack em modo dev o arquivo bundle.js não é gerado porem é implicito que existe podendo ser importado no arquivo html, caso vc rode em modo production o arquivo será gerado 
+// antes de utilizar o webpack, somente o babel, é necessario criar o bundle.js, configurado em devBabel no package.json
+// e assim fazer a o bundle do arquivo main para que todo navegador entenda.
